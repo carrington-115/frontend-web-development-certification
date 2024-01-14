@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Registration form</title>
+    <link rel="stylesheet" href="./styles/register.css" />
+  </head>
+  <body>
+    <div class="registration-form">
+      <form action="/" method="post">
+        <label for="name">Username: </label>
+        <input type="text" name="name" />
+        <label for="email">User Email: </label>
+        <input type="email" name="email" />
+        <label for="contact">Phone: </label>
+        <input type="tel" name="contact" />
+        <label for="dob">Date of birth</label>
+        <input type="date" name="dob" />
+        <label for="passport-image">Submit your passport image</label>
+        <input type="file" name="passport-image" />
+        <!---Checkboxes-->
+        <legend>
+          <label for="html">HTML</label>
+          <input type="checkbox" name="courses" value="html" />
+          <label for="css">CSS</label>
+          <input type="checkbox" name="courses" value="css" />
+          <label for="js">Javascript</label>
+          <input type="checkbox" name="courses" value="Javascript" />
+          <label for="react">React</label>
+          <input type="checkbox" name="courses" value="React" />
+        </legend>
+        <!--Radio buttons-->
+
+        <legend>
+          <label for="gender">Gender</label>
+          <label for="man">Man</label>
+          <input type="radio" name="gender" value="man" />
+          <label for="gender">Woman</label>
+          <input type="radio" name="gender" value="woman" />
+        </legend>
+        <!--drop down-->
+        <select name="country" id="">
+          <option value="cm">Cameroon</option>
+          <option value="ng">Nigeria</option>
+          <option value="et">Egypt</option>
+          <option value="eg">Equatorial Guinea</option>
+          <option value="cn">Congo</option>
+        </select>
+        <input type="submit" />
+      </form>
+    </div>
+    <div>
+      <a href="home.html">Home</a>
+      <a href="courses.html">Courses</a>
+    </div>
+  </body>
+</html>

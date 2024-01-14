@@ -1,0 +1,16 @@
+h1,
+h2,
+h3,
+p {
+  font-size: 24px;
+  font-style: normal;
+  color: green;
+}
+ul {
+  display: flex;
+  flex-direction: column;
+}
+li {
+  font-size: 24px;
+  color: red;
+}
