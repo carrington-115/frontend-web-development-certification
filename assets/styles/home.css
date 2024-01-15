@@ -1,0 +1,53 @@
+.header {
+  max-width: 100%;
+  background-color: rgb(0, 66, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px 0;
+  margin: 0;
+}
+.header #register {
+  border: 1px solid transparent;
+  background-color: white;
+  color: rgb(0, 66, 0);
+  padding: 5px 15px;
+  border-radius: 20px;
+}
+
+.header #register:hover {
+  border-color: white;
+  background-color: transparent;
+  color: white;
+  text-decoration: none;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.header a {
+  text-decoration: none;
+  color: white;
+  margin: 0 24px;
+}
+.header a:hover {
+  text-decoration: underline;
+  text-decoration-color: white;
+}
+
+.top-page-section {
+  display: block;
+  max-width: 100%;
+  padding: 24px;
+  background-color: rgb(130, 130, 243);
+  color: white;
+}
+
+.content{
+  padding-left: 24px;
+  display: block;
+  
+}
+
