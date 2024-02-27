@@ -25,3 +25,8 @@ for (var i = 0; i < message.length; i++) {
     console.log("%c" + message[i], "color: green; font-size: 20px;");
   }
 }
+
+// functions
+function greetings(name) {
+  console.log("hello there. This is ", name);
+}
