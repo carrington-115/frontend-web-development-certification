@@ -105,3 +105,19 @@ console.log("This is guessing time", myGuess);
 const myName = ["M", "a", "r", "k"];
 for (let i = 0; i < myName.length; i++) console.log(myName[i]);
 console.log(myName.join(""));
+
+console.log(
+  typeof myName,
+  typeof myGuess,
+  typeof numbers,
+  typeof letters,
+  typeof person
+);
+
+console.log(
+  typeof true,
+  typeof 1,
+  typeof [1, 2],
+  typeof "Carrington",
+  typeof "hello"
+);
