@@ -135,3 +135,30 @@ try {
 
 // we can throw and error by
 // throw new printingError();
+
+// null, undefined, and empty strings
+const myOriginalName = "Carrington";
+console.log(myOriginalName.match("a"));
+console.log(myOriginalName.match("d"));
+
+let noise;
+console.log(noise);
+
+noise = "thunder";
+console.log(noise);
+
+// experimenting with the try, catch, and throw error handling syntax
+
+function sumNumbers(a, b) {
+  try {
+    if (typeof a !== "number" || typeof b !== "number") {
+      throw new TypeError();
+    } else console.log(a + b);
+  } catch (err) {
+    console.log(err);
+    console.log("One of the variables was not a number");
+  }
+}
+
+sumNumbers(3, "3");
+console.log("The code still works");
