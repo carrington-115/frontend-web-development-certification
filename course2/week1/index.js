@@ -90,3 +90,18 @@ console.log(
   Math.round(Math.LN2),
   Math.trunc(Math.LN10)
 );
+
+// using the Math.random() and Math.ceil to print random numbers
+console.log(Math.ceil(Math.random(10) * 10));
+function returnRandomNumber(num) {
+  const guess = Math.random(num) * 10;
+  return Math.ceil(guess);
+}
+
+const myGuess = returnRandomNumber(5);
+console.log("This is guessing time", myGuess);
+
+// deeper into strings as arrays
+const myName = ["M", "a", "r", "k"];
+for (let i = 0; i < myName.length; i++) console.log(myName[i]);
+console.log(myName.join(""));
