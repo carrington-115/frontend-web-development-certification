@@ -67,3 +67,26 @@ const newBook = {
 };
 
 console.log(newBook);
+
+// using the bracket notation for the creation of objects
+const person = new Object();
+person["name"] = "Mark";
+person["age"] = 20;
+
+console.log(person);
+
+// operations on arrays and objects
+const letters = ["a", "b", "c", "d"];
+letters.push("e");
+letters.push(["f", "g"]);
+console.log(letters);
+letters.pop(); // this will remove the last element in the letters array, ["f", "g"]
+console.log(letters);
+
+// using maths operators in js
+console.log(
+  Math.ceil(Math.PI),
+  Math.floor(Math.E),
+  Math.round(Math.LN2),
+  Math.trunc(Math.LN10)
+);
