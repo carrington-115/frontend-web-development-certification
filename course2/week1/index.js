@@ -121,3 +121,17 @@ console.log(
   typeof "Carrington",
   typeof "hello"
 );
+
+// Bugs in Javascript
+// using throw, try, and catch for error handling
+
+try {
+  console.log("Hi, I'm", Mark);
+  throw new ReferenceError();
+} catch (err) {
+  console.log(err);
+  console.log("An error occurred");
+}
+
+// we can throw and error by
+// throw new printingError();
