@@ -53,3 +53,17 @@ function letterFinder(word, match) {
 }
 
 letterFinder("test", "t");
+
+// objects in JS
+
+const book = new Object();
+book.page1 = 1;
+book.page2 = 2;
+console.log(book);
+
+const newBook = {
+  page1: 1,
+  page2: 2,
+};
+
+console.log(newBook);
