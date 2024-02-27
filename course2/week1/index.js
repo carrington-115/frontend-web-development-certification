@@ -30,3 +30,26 @@ for (var i = 0; i < message.length; i++) {
 function greetings(name) {
   console.log("hello there. This is ", name);
 }
+
+// iterating through an array of numbers
+
+const numbers = [1, 2, 3, 4, 5];
+
+function iter(array) {
+  for (let i = 0; i < array.length; i++) console.log(array[i], " ");
+}
+
+iter(numbers);
+
+// building the letter finding algorithm
+
+function letterFinder(word, match) {
+  for (let i = 0; i < word.length; i++) {
+    if (word[i] === match) {
+      console.log(`Match found at index, ${i + 1}`);
+      break;
+    } else console.log(`Match not found at index, ${i + 1}`);
+  }
+}
+
+letterFinder("test", "t");
