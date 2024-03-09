@@ -41,3 +41,50 @@ class Student extends Person {}
 
 const markStudent = new Student("Mark", "20");
 markStudent.printDetails();
+
+// OOP exercise
+
+class Pen {
+  constructor(name, color, thickness, writtenContent) {
+    this.name = name;
+    this.color = color;
+    this.thickness = thickness;
+    this.writtenContent = writtenContent;
+  }
+  writeSomething() {
+    console.log(
+      this.name,
+      "pen with color",
+      this.color,
+      "wrote the content, ",
+      this.writtenContent
+    );
+  }
+}
+
+// inheritance
+class SchneiderPen extends Pen {}
+
+// abstraction and polymorphism
+class Pencil extends Pen {
+  drawSomething() {
+    super.writeSomething();
+    console.log("All pencils has", this.color, "color");
+  }
+}
+
+// encapsulation
+
+const testPenOne = new Pen("bic", "black", "20mm", "hello world");
+testPenOne.writeSomething();
+
+const testSchneiderPen = new SchneiderPen(
+  "schneider",
+  "blue",
+  "30mm",
+  "Hello world"
+);
+testSchneiderPen.writeSomething();
+
+const testPencil = new Pencil("HB", "black", "15mm", "I drew a hat");
+testPencil.drawSomething();
