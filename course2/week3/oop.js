@@ -19,3 +19,25 @@ let shoeCalOOP = {
 };
 
 shoeCalOOP.totalPrice();
+
+// using classes
+class Person {
+  constructor(name, age) {
+    this.name = name;
+    this.age = age;
+  }
+  printDetails() {
+    console.log(`My name is ${this.name}, and I am ${this.age} years old`);
+  }
+}
+
+const Mark = new Person("Fru Mark Carrington Chei", "20");
+Mark.printDetails();
+
+// OOP Principles
+// 1. Inheritance
+
+class Student extends Person {}
+
+const markStudent = new Student("Mark", "20");
+markStudent.printDetails();
