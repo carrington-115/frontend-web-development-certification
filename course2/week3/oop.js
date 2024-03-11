@@ -75,16 +75,70 @@ class Pencil extends Pen {
 
 // encapsulation
 
-const testPenOne = new Pen("bic", "black", "20mm", "hello world");
-testPenOne.writeSomething();
+// const testPenOne = new Pen("bic", "black", "20mm", "hello world");
+// testPenOne.writeSomething();
 
-const testSchneiderPen = new SchneiderPen(
-  "schneider",
-  "blue",
-  "30mm",
-  "Hello world"
+// const testSchneiderPen = new SchneiderPen(
+//   "schneider",
+//   "blue",
+//   "30mm",
+//   "Hello world"
+// );
+// testSchneiderPen.writeSomething();
+
+// const testPencil = new Pencil("HB", "black", "15mm", "I drew a hat");
+// testPencil.drawSomething();
+
+// constructors
+const date = new Date();
+console.log(date);
+
+const footballer = {
+  name: "Mark",
+  position: "striker",
+  goals: 100,
+};
+
+let messiFootballer = Object.create(footballer);
+// messiFootballer.name = "Messi";
+// messiFootballer.position = "dribbler";
+// messiFootballer.goals = "100+";
+console.log(
+  messiFootballer.name,
+  messiFootballer.position,
+  messiFootballer.goals
 );
-testSchneiderPen.writeSomething();
 
-const testPencil = new Pencil("HB", "black", "15mm", "I drew a hat");
-testPencil.drawSomething();
+class Point {
+  constructor(xCord, yCord, xTranslateStatus, yTranslateStatus, xTVal, yTVal) {
+    this.xCord = xCord;
+    this.yCord = yCord;
+    this.xTranslateStatus = xTranslateStatus;
+    this.yTranslateStatus = yTranslateStatus;
+    this.xTVal = xTVal;
+    this.yTVal = yTVal;
+  }
+
+  printPoint() {
+    console.log(`The point is: x: ${this.xCord} and y: ${this.yCord}`);
+  }
+
+  pointTranslation() {
+    if (this.xTranslateStatus === true && this.yTranslateStatus === true) {
+      console.log(
+        `The point went from ${this.xCord} and ${this.yCord} to ${
+          this.xCord + this.xTVal
+        } and ${this.yCord + this.yTVal} respectively`
+      );
+    }
+  }
+}
+
+const Origin = new Point(0, 0, false, false, 0, 0);
+Origin.printPoint();
+Origin.xTranslateStatus = true;
+Origin.yTranslateStatus = true;
+console.log(Origin);
+Origin.xTVal = 2;
+Origin.yTVal = 2;
+Origin.pointTranslation();
