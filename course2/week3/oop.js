@@ -155,3 +155,8 @@ class threeSpacePoint extends Point {
 
 const Vector = new threeSpacePoint(3, 2, 1);
 Vector.printCords();
+
+// array and object destructuuring
+let { PI } = Math;
+console.log(PI);
+console.log(PI === Math.PI);
