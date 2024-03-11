@@ -142,3 +142,16 @@ console.log(Origin);
 Origin.xTVal = 2;
 Origin.yTVal = 2;
 Origin.pointTranslation();
+
+class threeSpacePoint extends Point {
+  constructor(xCord, yCord, zCord) {
+    super(xCord, yCord);
+    this.zCord = zCord;
+  }
+  printCords() {
+    console.log(`x: ${this.xCord} y: ${this.yCord} z: ${this.zCord}`);
+  }
+}
+
+const Vector = new threeSpacePoint(3, 2, 1);
+Vector.printCords();
