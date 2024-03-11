@@ -160,3 +160,29 @@ Vector.printCords();
 let { PI } = Math;
 console.log(PI);
 console.log(PI === Math.PI);
+
+// for of loops and objects
+
+// const schoolBag = {
+//   name: "bag",
+//   bookNumber: 4,
+// };
+
+const schoolBag = ["bag", 4];
+for (prop of schoolBag) {
+  console.log(prop);
+}
+
+console.log(
+  Object.keys({ name: "mark", department: "BTECH ECSE" }),
+  Object.entries({ name: "mark", department: "BTECH ECSE" })
+);
+
+const ingredientsPercentage = {
+  potassium: "20%",
+  magnesium: "10%",
+  calcium: "5%",
+};
+for (let key of Object.keys(ingredientsPercentage)) {
+  console.log(`${key}: ${ingredientsPercentage[key]}`);
+}
