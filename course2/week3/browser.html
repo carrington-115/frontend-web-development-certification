@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+  <head>
+    <title>browser</title>
+  </head>
+  <body>
+    <div>
+      <h1>hello world</h1>
+      <h2>Hello world</h2>
+    </div>
+    <script>
+      console.log("hello world");
+      console.log("hello world");
+    </script>
+    <script type="module">
+      import { printName } from "./browser.js";
+      const name = prompt("What is your name");
+      if (typeof name === "string") {
+        printName(name);
+        const nameElement = document.createElement("h2");
+        nameElement.innerHTML = "My name is " + name;
+        document.body.appendChild(nameElement);
+      } else {
+        console.log("name is not valid");
+      }
+    </script>
+  </body>
+</html>
