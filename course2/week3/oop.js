@@ -186,3 +186,10 @@ const ingredientsPercentage = {
 for (let key of Object.keys(ingredientsPercentage)) {
   console.log(`${key}: ${ingredientsPercentage[key]}`);
 }
+for (let value of Object.values(ingredientsPercentage)) {
+  console.log("value:", value);
+}
+
+for (prop in ingredientsPercentage) {
+  console.log(prop);
+}
