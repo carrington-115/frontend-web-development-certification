@@ -222,3 +222,17 @@ console.log(
 );
 
 console.log(subjects);
+
+// using maps
+const laptopsBrand = new Map();
+console.log(typeof laptopsBrand);
+
+laptopsBrand.set("hp", ["notebook", "laptop", "mouse"]);
+laptopsBrand.set("dell", ["notebook", "laptop", "mouse"]);
+laptopsBrand.set("apple", ["notebook", "laptop", "mouse"]);
+
+console.log(laptopsBrand.get("dell"));
+
+// sets
+const fruits = new Set(["apple", "banana", "apple", "orange"]);
+console.log(fruits);
