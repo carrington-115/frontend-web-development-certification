@@ -236,3 +236,21 @@ console.log(laptopsBrand.get("dell"));
 // sets
 const fruits = new Set(["apple", "banana", "apple", "orange"]);
 console.log(fruits);
+console.log("I want to eat", ...fruits);
+
+const [first, second, ...others] = fruits;
+console.log(first, second, others);
+others.push("banana");
+console.log(others);
+console.log(others.pop("banana"));
+console.log(others);
+
+const newFruits = [...fruits, ...others]; // combine fruits with others array but by spreading out the elements
+console.log(newFruits);
+
+const person = {
+  name: "name",
+  age: "age",
+};
+
+person.name -= person.age;
