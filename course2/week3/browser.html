@@ -14,15 +14,17 @@
     </script>
     <script type="module">
       import { printName } from "./browser.js";
-      const name = prompt("What is your name");
-      if (typeof name === "string") {
-        printName(name);
-        const nameElement = document.createElement("h2");
-        nameElement.innerHTML = "My name is " + name;
-        document.body.appendChild(nameElement);
-      } else {
-        console.log("name is not valid");
-      }
+      import { displayData } from "./browser.js";
+      displayData();
+      //   const name = prompt("What is your name");
+      //   if (typeof name === "string") {
+      //     printName(name);
+      //     const nameElement = document.createElement("h2");
+      //     nameElement.innerHTML = "My name is " + name;
+      //     document.body.appendChild(nameElement);
+      //   } else {
+      //     console.log("name is not valid");
+      //   }
     </script>
   </body>
 </html>
