@@ -193,3 +193,32 @@ for (let value of Object.values(ingredientsPercentage)) {
 for (prop in ingredientsPercentage) {
   console.log(prop);
 }
+
+// data structures
+// 1.
+
+const newSet = new Set();
+console.log(newSet);
+
+newSet.age = 5;
+console.log(newSet);
+
+// operations on arrays
+const subjects = ["bio", "phy", "maths"];
+subjects.forEach((data, index) => {
+  console.log("I am studying", data, "found in index", index);
+});
+
+console.log(
+  subjects.filter((subject) => {
+    return subject.startsWith("p");
+  })
+);
+
+console.log(
+  subjects.map((item) => {
+    return item.concat(" subject");
+  })
+);
+
+console.log(subjects);
