@@ -253,4 +253,18 @@ const person = {
   age: "age",
 };
 
-person.name -= person.age;
+// writing a program for my wardrope
+
+// class Wardrope {
+//   constructor(dresses, toiletteries, shoes) {
+//     this.dresses = dresses;
+//     this.toiletteries = toiletteries;
+//     this.shoes = shoes;
+//   }
+//   updateDresses(dress, type, color) {
+//     this.dresses?.type = (prev) => {
+//     }
+//   }
+//   washDresses() {}
+//   washShoes() {}
+// }
