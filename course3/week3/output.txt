@@ -1,0 +1,6 @@
+total 2
+drwxr-xr-x 1 Tosh7 197121  0 Apr  1 20:18 .
+drwxr-xr-x 1 Tosh7 197121  0 Mar 31 05:44 ..
+-rw-r--r-- 1 Tosh7 197121 29 Apr  1 19:32 main.js
+-rw-r--r-- 1 Tosh7 197121  0 Apr  1 20:18 output.txt
+-rw-r--r-- 1 Tosh7 197121 12 Apr  1 20:13 text.txt
